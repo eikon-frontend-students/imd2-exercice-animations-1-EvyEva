@@ -121,3 +121,18 @@ video {
   height: 80px;
   background: var(--black);
 }
+
+//---------------------------------------------------
+
+.loader {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate();
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
