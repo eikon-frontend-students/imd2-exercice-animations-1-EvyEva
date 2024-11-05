@@ -190,3 +190,53 @@ video {
     opacity: 0;
   }
 }
+//---------------------------------------------------
+.pong-ball {
+  animation: balle 7s linear infinite;
+}
+
+@keyframes balle {
+  0% {
+    transform: translate(-185px, -110px);
+  }
+
+  50% {
+    transform: translate(185px, 80px);
+  }
+
+  100% {
+    transform: translate(-185px, -110px);
+  }
+}
+
+.pong-paddle:nth-child(1) {
+  animation: bord1 7s linear infinite;
+}
+
+@keyframes bord1 {
+  0% {
+    transform: translate(0px, -105px);
+  }
+  80% {
+    transform: translate(0px, 30px);
+  }
+  100% {
+    transform: translate(0px, -105px);
+  }
+}
+
+.pong-paddle:nth-child(3) {
+  animation: bord2 7s linear infinite;
+}
+
+@keyframes bord2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(0px, -30px);
+  }
+  50% {
+    transform: translate(0px, 100px);
+  }
+}
