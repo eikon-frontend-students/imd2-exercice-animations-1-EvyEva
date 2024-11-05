@@ -136,3 +136,57 @@ video {
     transform: rotate(360deg);
   }
 }
+//---------------------------------------------------
+
+.button {
+  animation: agrandir 1s ease infinite;
+}
+
+@keyframes agrandir {
+  0% {
+    transform: scale(110%);
+  }
+  50% {
+    transform: scale(100%);
+  }
+  100% {
+    transform: scale(110%);
+  }
+}
+
+//---------------------------------------------------
+
+.background {
+  animation: couleur 5s ease infinite;
+}
+
+@keyframes couleur {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+//---------------------------------------------------
+.submit-plane {
+  animation: envole 4s ease infinite;
+}
+
+@keyframes envole {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(40px, -40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(40px, -40px);
+    opacity: 0;
+  }
+}
